@@ -1,0 +1,41 @@
+body{
+    font-family: "Inter", sans-serif;
+    width: 55rem;
+    padding: 2rem 1.5rem;
+    margin: 0 auto;
+    color: #241623;
+    background: #eef2f4;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 2.7rem;
+    max-width: 20ch;
+}
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    list-style-type: none;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    aspect-ratio: 1/1;
+    position: relative;
+    padding: 1.5rem;
+    color: #ffffff;
+    backface-visibility: hidden;
+    text-decoration: none;
+    overflow: hidden;
+}
+.profile::before,
+.profile::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
